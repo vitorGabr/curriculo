@@ -11,8 +11,6 @@ import Image from "next/image";
 import { css } from "styled-system/css";
 import { Container, Stack, Flex, Grid } from "styled-system/jsx";
 
-export const runtime = 'edge'
-
 export default function Home() {
 	const {
 		name,

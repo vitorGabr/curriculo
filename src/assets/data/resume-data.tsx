@@ -9,7 +9,7 @@ export const RESUME_DATA = {
     "Desenvolvedor Front-End focado em construir produtos com atenção extra aos detalhes",
   summary:
     "Como Desenvolvedor Front-End, levei com sucesso vários produtos de 0 a 1. Lidero equipes de forma eficaz, garantindo um ambiente onde as pessoas possam fazer seu melhor trabalho. Atualmente trabalho principalmente com TypeScript, React, Node.js e GraphQL. Tenho mais de 8 anos de experiência trabalhando remotamente com empresas de todo o mundo.",
-  avatarUrl: "https://avatars.githubusercontent.com/u/51758729?s=400&u=22ffb432a5ba3a893719b932cec965b3abea506e&v=4",
+  avatarUrl: "https://avatars.githubusercontent.com/u/51758729",
   contact: {
     email: "macstudios.info@gmail.com",
     tel: "+5519998579701",
