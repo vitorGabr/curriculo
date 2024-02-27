@@ -21,7 +21,7 @@ export default defineConfig({
 				colors: {
 					bg: {
 						surface: {
-							value: { base: "{colors.white}", _dark: "{colors.gray.1}" },
+							value: { base: "white", _dark: "{colors.gray.1}" },
 						},
 					},
 				},
