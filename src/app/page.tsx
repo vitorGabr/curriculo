@@ -1,6 +1,8 @@
 import { RESUME_DATA } from "@/assets/data/resume-data";
+import { EducationCard } from "@/components/education-card";
 import { JobCard } from "@/components/job-card";
 import { ProjectCard } from "@/components/project-card";
+import { SocialContacts } from "@/components/social-contacts";
 import { Badge } from "@/components/ui/badge";
 import { Heading } from "@/components/ui/heading";
 import { Icon } from "@/components/ui/icon";
@@ -20,6 +22,7 @@ export default function Home() {
 		skills,
 		summary,
 		projects,
+		education,
 		work,
 		contact,
 	} = RESUME_DATA;
@@ -47,36 +50,9 @@ export default function Home() {
 									{location}
 								</Text>
 							</Stack>
-							<Flex gap="2">
-								<IconButton size="xs" variant="outline" asChild>
-									<a href={`mailto:${contact.email}`}>
-										<Icon color="fg.muted">
-											<MailIcon size={24} />
-										</Icon>
-									</a>
-								</IconButton>
-								<IconButton size="xs" variant="outline" asChild>
-									<a href={`tel:${contact.tel}`}>
-										<Icon color="fg.muted">
-											<PhoneIcon />
-										</Icon>
-									</a>
-								</IconButton>
-								{contact.social.map((item) => (
-									<IconButton
-										size="xs"
-										variant="outline"
-										asChild
-										key={item.name}
-									>
-										<a href={item.url}>
-											<Icon color="fg.muted" size="lg">
-												<item.icon />
-											</Icon>
-										</a>
-									</IconButton>
-								))}
-							</Flex>
+							<SocialContacts 
+								contact={contact}
+							/>
 						</Stack>
 						<Image
 							src={avatarUrl}
@@ -96,6 +72,7 @@ export default function Home() {
 							{summary}
 						</Text>
 					</Stack>
+
 					<Stack>
 						<Heading as="h1" fontSize="2xl" fontWeight="bold">
 							Experiências Profissionais
@@ -103,6 +80,16 @@ export default function Home() {
 						<Stack gap="4">
 							{work.map((job) => {
 								return <JobCard key={job.title} {...job} />;
+							})}
+						</Stack>
+					</Stack>
+					<Stack>
+						<Heading as="h1" fontSize="2xl" fontWeight="bold">
+							Educação
+						</Heading>
+						<Stack gap="4">
+							{education.map((education) => {
+								return <EducationCard key={education.school} {...education} />;
 							})}
 						</Stack>
 					</Stack>
