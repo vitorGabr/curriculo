@@ -72,7 +72,6 @@ export default function Home() {
 							{summary}
 						</Text>
 					</Stack>
-
 					<Stack>
 						<Heading as="h1" fontSize="2xl" fontWeight="bold">
 							Experiências Profissionais
@@ -109,7 +108,7 @@ export default function Home() {
 						<Heading as="h1" fontSize="2xl" fontWeight="bold">
 							Projetos
 						</Heading>
-						<Grid columns={[1, 3, 3]} gap={"3"}>
+						<Grid columns={[2, 3, 3]} gap={"3"}>
 							{projects.map((project) => {
 								return (
 									<ProjectCard

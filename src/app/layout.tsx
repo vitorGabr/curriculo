@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import { Fira_Code } from "next/font/google";
 import "./globals.css";
 
-const fire = Fira_Code({ subsets: ["latin"] });
+const fire = Fira_Code({ subsets: ["latin"], variable: "--font-fallback" });
 
 export const metadata: Metadata = {
   title: "Currículo - Vitor Gabriel de Jesus",

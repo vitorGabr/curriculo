@@ -38,7 +38,7 @@ export const RESUME_DATA = {
 		{
 			company: "Marry Perry Paris",
 			link: "https://marryperryparis.com.br/",
-			badges: ["Remote"],
+			badges: ["Remoto"],
 			title: "Desenvolvedor Front-End Pleno",
 			start: "2021",
 			description:
