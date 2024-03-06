@@ -16,7 +16,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="pt-BR">
-      <body className={fire.className}>{children}</body>
+      <body className={`${fire.className}`}>{children}</body>
     </html>
   );
 }

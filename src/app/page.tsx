@@ -3,12 +3,10 @@ import { EducationCard } from "@/components/education-card";
 import { JobCard } from "@/components/job-card";
 import { ProjectCard } from "@/components/project-card";
 import { SocialContacts } from "@/components/social-contacts";
+import { Toolbar } from "@/components/toolbar";
 import { Badge } from "@/components/ui/badge";
 import { Heading } from "@/components/ui/heading";
-import { Icon } from "@/components/ui/icon";
-import { IconButton } from "@/components/ui/icon-button";
 import { Text } from "@/components/ui/text";
-import { MailIcon, PhoneIcon } from "lucide-react";
 import Image from "next/image";
 import { css } from "styled-system/css";
 import { Container, Stack, Flex, Grid } from "styled-system/jsx";
@@ -122,6 +120,7 @@ export default function Home() {
 							})}
 						</Grid>
 					</Stack>
+					<Toolbar />
 				</Stack>
 			</Container>
 			{/* <Toolbar /> */}

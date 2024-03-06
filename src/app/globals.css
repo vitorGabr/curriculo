@@ -1,1 +1,10 @@
 @layer reset, base, tokens, recipes, utilities;
+
+@media print {
+    body html {
+        width: 210mm
+    }
+    #toolbar {
+        display: none
+    }
+}

@@ -15,6 +15,11 @@ export default defineConfig({
 		"./src/components/**/*.{ts,tsx,js,jsx}",
 		"./src/app/**/*.{ts,tsx,js,jsx}",
 	],
+	globalCss: {
+		html: {
+			background: "bg.surface",
+		},
+	},
 	theme: {
 		extend: {
 			semanticTokens: {
