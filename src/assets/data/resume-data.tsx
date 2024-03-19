@@ -36,6 +36,16 @@ export const RESUME_DATA = {
 	],
 	work: [
 		{
+			company: "Eu Vivi",
+			link: "http://www.feriasvivas.org.br/aplicativoeuvivi/",
+			badges: ["Freelance", "Remoto"],
+			title: "Desenvolvedor Front-End",
+			start: "2023",
+			end: "2023",
+			description:
+				"Desenvolvi um aplicativo para mapear a segurança em atividades turísticas no Brasil",
+		},
+		{
 			company: "Marry Perry Paris",
 			link: "https://marryperryparis.com.br/",
 			badges: ["Remoto"],
@@ -85,16 +95,6 @@ export const RESUME_DATA = {
 			link: {
 				label: "quizle.vercel.app",
 				href: "https://quizle.vercel.app/",
-			},
-		},
-		{
-			title: "Eu Vivi",
-			techStack: ["Freelance", "Flutter"],
-			description:
-				"O APP EU VIVI é uma ferramenta gratuita e colaborativa de mapeamento da segurança em atividades turísticas no Brasil.",
-			link: {
-				label: "feriasvivas.org.br/aplicativoeuvivi",
-				href: "http://www.feriasvivas.org.br/aplicativoeuvivi/",
 			},
 		},
 		{
