@@ -29,6 +29,7 @@ export function Toolbar() {
 			border={"1px solid"}
 			borderColor={"border.subtle"}
 			p={"1"}
+			hideBelow={'md'}
 		>
 			<Button
 				size="sm"

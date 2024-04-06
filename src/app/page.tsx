@@ -106,7 +106,7 @@ export default function Home() {
 						<Heading as="h1" fontSize="2xl" fontWeight="bold">
 							Projetos
 						</Heading>
-						<Grid columns={[3, 3, 3]} gap={"3"}>
+						<Grid columns={[1, 3, 3]} gap={"3"}>
 							{projects.map((project) => {
 								return (
 									<ProjectCard
@@ -123,7 +123,6 @@ export default function Home() {
 					<Toolbar />
 				</Stack>
 			</Container>
-			{/* <Toolbar /> */}
 		</main>
 	);
 }
